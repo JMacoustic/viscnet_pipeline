@@ -1,0 +1,9 @@
+{
+  "scene": "scene.json",
+  "properties": "properties.csv",
+  "duration_s": 15.0,
+  "export_fps": 10.0,
+  "power_cut_s": 11.5,
+  "motor_stop_s": 12.5,
+  "rpm_values": [270, 290, 310, 330, 350, 370, 390, 410, 430, 450]
+}

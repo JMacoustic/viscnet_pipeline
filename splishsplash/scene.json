@@ -1,0 +1,93 @@
+{
+  "Configuration": {
+    "particleRadius": 0.002,
+    "numberOfStepsPerRenderUpdate": 4,
+    "density0": 1250,
+    "simulationMethod": 4,
+    "gravitation": [0, -9.81, 0],
+    "cflMethod": 1,
+    "cflFactor": 1,
+    "cflMaxTimeStepSize": 0.001,
+    "maxIterations": 100,
+    "maxError": 0.005,
+    "maxIterationsV": 100,
+    "maxErrorV": 0.005,
+    "stiffness": 50000,
+    "exponent": 7,
+    "velocityUpdateMethod": 0,
+    "enableDivergenceSolver": true,
+    "particleAttributes": "velocity",
+    "boundaryHandlingMethod": 2
+  },
+  "Materials": [
+    {
+      "id": "Fluid",
+      "colorMapType": 1,
+      "surfaceTension": 0.072,
+      "surfaceTensionMethod": 2,
+      "viscosity": 0.000001,
+      "viscosityBoundary": 0.000001,
+      "viscosityMethod": 6,
+      "viscoMaxIter": 100,
+      "viscoMaxError": 0.005,
+      "Weiler et al. 2018": {
+        "viscosity": 0.000001,
+        "viscosityBoundary": 0.000001,
+        "viscoMaxIter": 100,
+        "viscoMaxError": 0.005
+      },
+      "xsph": 0.0001,
+      "xsphBoundary": 0.0001
+    }
+  ],
+  "RigidBodies": [
+    {
+      "id": 0,
+      "geometryFile": "meshes/fluidsample.obj",
+      "translation": [0, 0, 0],
+      "rotationAxis": [1, 0, 0],
+      "rotationAngle": -1.57079632,
+      "scale": [0.01, 0.01, 0.05],
+      "color": [0.1, 0.4, 0.6, 1.0],
+      "isDynamic": false,
+      "isWall": true,
+      "mapInvert": true,
+      "mapThickness": 0.0,
+      "mapResolution": [25, 25, 25]
+    },
+    {
+      "id": 1,
+      "geometryFile": "meshes/impeller_rotated.obj",
+      "translation": [0, 0.01, 0],
+      "rotationAxis": [0, 1, 0],
+      "rotationAngle": 0.0,
+      "scale": [0.01, 0.01, 0.01],
+      "color": [0.1, 0.4, 0.6, 1.0],
+      "density": 10000,
+      "isDynamic": true,
+      "isWall": false,
+      "mapInvert": false,
+      "mapThickness": 0.0,
+      "mapResolution": [50, 50, 50]
+    }
+  ],
+  "TargetVelocityMotorHingeJoints": [
+    {
+      "bodyID1": 1,
+      "bodyID2": 0,
+      "position": [0, 0, 0],
+      "axis": [0, 1, 0],
+      "repeatSequence": 1,
+      "targetSequence": [0, 28.2743338823, 11.5, 28.2743338823, 12.5, 0, 15, 0]
+    }
+  ],
+  "FluidBlocks": [
+    {
+      "denseMode": 0,
+      "start": [-0.5, -0.5, -0.5],
+      "end": [0.5, 1, 0.5],
+      "translation": [0.0, 0.15, 0.0],
+      "scale": [0.05, 0.17, 0.05]
+    }
+  ]
+}

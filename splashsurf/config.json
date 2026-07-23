@@ -1,0 +1,18 @@
+{
+  "frame_start": 101,
+  "frame_end": 150,
+  "particle_radius": 0.002,
+  "rest_density": 1100.0,
+  "smoothing_length": 2.8,
+  "cube_size": 0.5,
+  "iso_surface_threshold": 0.6,
+  "mesh_smoothing_weights": false,
+  "mesh_smoothing_weights_normalization": 20.0,
+  "mesh_smoothing_iters": 30,
+  "normals_smoothing_iters": 10,
+  "mesh_cleanup": true,
+  "compute_normals": true,
+  "subdomain_grid": true,
+  "subdomain_num_cubes_per_dim": 64,
+  "output_mesh_smoothing_weights": true
+}
