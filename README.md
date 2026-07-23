@@ -29,6 +29,8 @@ python splishsplash/run_simulation.py \
 
 The dataset grid uses 50 property rows and 10 speeds from 270 to 450 RPM in 20 RPM steps. Each run lasts 15 s and exports at 10 fps. The motor is powered until 11.5 s, stops at 12.5 s, and then decays freely.
 
+The nominal vessel diameter is 135 mm. The impeller radius is 40 mm, its diameter is 80 mm, and its immersion depth is 40 mm.
+
 ## 2. Surface reconstruction
 
 ```bash

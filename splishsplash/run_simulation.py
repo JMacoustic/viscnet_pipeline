@@ -78,6 +78,7 @@ def main() -> None:
         "rpm": args.rpm,
         "duration_s": config["duration_s"],
         "export_fps": config["export_fps"],
+        "geometry": config["geometry"],
         "target_sequence": scene["TargetVelocityMotorHingeJoints"][0]["targetSequence"],
     }
     (output / "config.json").write_text(json.dumps(metadata, indent=2), encoding="utf-8")

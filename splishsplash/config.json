@@ -1,6 +1,12 @@
 {
   "scene": "scene.json",
   "properties": "properties.csv",
+  "geometry": {
+    "container_diameter_m": 0.135,
+    "impeller_radius_m": 0.04,
+    "impeller_diameter_m": 0.08,
+    "impeller_immersion_depth_m": 0.04
+  },
   "duration_s": 15.0,
   "export_fps": 10.0,
   "power_cut_s": 11.5,
