@@ -1,3 +1,5 @@
 * text=auto eol=lf
 *.png binary
 *.obj binary
+*.pth binary
+*.mp4 binary
