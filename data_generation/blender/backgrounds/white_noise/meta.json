@@ -1,0 +1,137 @@
+{
+  "description": "Five 8-bit grayscale square-cell white-noise backgrounds at 1900x1000 starting from 15 px cells.",
+  "width_px": 1900,
+  "height_px": 1000,
+  "resolution_px": [
+    1900,
+    1000
+  ],
+  "field_width_mm": 136.0,
+  "field_height_mm": 71.578947,
+  "source_cell_px": [
+    15,
+    30,
+    45,
+    60,
+    75
+  ],
+  "scale_multiplier": 1,
+  "start_px": 15,
+  "scale_rule": "five linear 15 px steps: 15, 30, 45, 60, 75",
+  "interpolation": "linear",
+  "scale_px": [
+    15,
+    30,
+    45,
+    60,
+    75
+  ],
+  "gray_levels": 256,
+  "patterns": [
+    {
+      "file": "white_noise_gray_1900x1000_15px_00_15px_1p07mm.png",
+      "render_path": "background/white_noise_5scale_1900x1000_15px/white_noise_gray_1900x1000_15px_00_15px_1p07mm.png",
+      "pattern_group": "whitenoise",
+      "width_px": 1900,
+      "height_px": 1000,
+      "resolution_px": [
+        1900,
+        1000
+      ],
+      "field_width_mm": 136.0,
+      "field_height_mm": 71.578947,
+      "cell_px": 15,
+      "cube_mm": 1.0737,
+      "cell_mm_horizontal": 1.0737,
+      "cell_mm_vertical": 1.0737,
+      "gray_levels": 256,
+      "shannon_entropy_bits": 7.977644,
+      "shannon_entropy_normalized": 0.997206,
+      "seed": 20260621
+    },
+    {
+      "file": "white_noise_gray_1900x1000_15px_01_30px_2p15mm.png",
+      "render_path": "background/white_noise_5scale_1900x1000_15px/white_noise_gray_1900x1000_15px_01_30px_2p15mm.png",
+      "pattern_group": "whitenoise",
+      "width_px": 1900,
+      "height_px": 1000,
+      "resolution_px": [
+        1900,
+        1000
+      ],
+      "field_width_mm": 136.0,
+      "field_height_mm": 71.578947,
+      "cell_px": 30,
+      "cube_mm": 2.1474,
+      "cell_mm_horizontal": 2.1474,
+      "cell_mm_vertical": 2.1474,
+      "gray_levels": 256,
+      "shannon_entropy_bits": 7.914217,
+      "shannon_entropy_normalized": 0.989277,
+      "seed": 20260621
+    },
+    {
+      "file": "white_noise_gray_1900x1000_15px_02_45px_3p22mm.png",
+      "render_path": "background/white_noise_5scale_1900x1000_15px/white_noise_gray_1900x1000_15px_02_45px_3p22mm.png",
+      "pattern_group": "whitenoise",
+      "width_px": 1900,
+      "height_px": 1000,
+      "resolution_px": [
+        1900,
+        1000
+      ],
+      "field_width_mm": 136.0,
+      "field_height_mm": 71.578947,
+      "cell_px": 45,
+      "cube_mm": 3.2211,
+      "cell_mm_horizontal": 3.2211,
+      "cell_mm_vertical": 3.2211,
+      "gray_levels": 256,
+      "shannon_entropy_bits": 7.778357,
+      "shannon_entropy_normalized": 0.972295,
+      "seed": 20260621
+    },
+    {
+      "file": "white_noise_gray_1900x1000_15px_03_60px_4p29mm.png",
+      "render_path": "background/white_noise_5scale_1900x1000_15px/white_noise_gray_1900x1000_15px_03_60px_4p29mm.png",
+      "pattern_group": "whitenoise",
+      "width_px": 1900,
+      "height_px": 1000,
+      "resolution_px": [
+        1900,
+        1000
+      ],
+      "field_width_mm": 136.0,
+      "field_height_mm": 71.578947,
+      "cell_px": 60,
+      "cube_mm": 4.2947,
+      "cell_mm_horizontal": 4.2947,
+      "cell_mm_vertical": 4.2947,
+      "gray_levels": 256,
+      "shannon_entropy_bits": 7.563144,
+      "shannon_entropy_normalized": 0.945393,
+      "seed": 20260621
+    },
+    {
+      "file": "white_noise_gray_1900x1000_15px_04_75px_5p37mm.png",
+      "render_path": "background/white_noise_5scale_1900x1000_15px/white_noise_gray_1900x1000_15px_04_75px_5p37mm.png",
+      "pattern_group": "whitenoise",
+      "width_px": 1900,
+      "height_px": 1000,
+      "resolution_px": [
+        1900,
+        1000
+      ],
+      "field_width_mm": 136.0,
+      "field_height_mm": 71.578947,
+      "cell_px": 75,
+      "cube_mm": 5.3684,
+      "cell_mm_horizontal": 5.3684,
+      "cell_mm_vertical": 5.3684,
+      "gray_levels": 256,
+      "shannon_entropy_bits": 7.33432,
+      "shannon_entropy_normalized": 0.91679,
+      "seed": 20260621
+    }
+  ]
+}

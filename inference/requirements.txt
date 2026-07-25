@@ -1,0 +1,11 @@
+# Minimal inference dependencies for ViscNet (ViViT viscosity estimator).
+# Pinned to the versions the weights were trained/exported with. The forward
+# path uses only torch + transformers (ViViT layers) + numpy + a video decoder.
+#
+# GPU: install the CUDA build of torch matching your system. CPU-only works too
+# (inference of 50 clips x 5 windows is a few minutes on CPU).
+torch==2.5.1
+transformers==4.39.0
+numpy==1.26.4
+opencv-python-headless==4.11.0.86
+# timm is NOT required for these weights (the pattern-backbone branch is disabled).

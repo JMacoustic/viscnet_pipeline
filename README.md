@@ -1,71 +1,67 @@
-# ViscNet Synthetic Data Generator
+# ViscNet Pipeline
 
-Minimal reference implementation of the synthetic-data pipeline used for ViscNet:
+End-to-end resources for **ViscNet**, a computer-vision model that estimates the
+**dynamic viscosity (cP)** of a stirred fluid from a short video of its free
+surface. The repository is split into two self-contained sections:
 
-1. SPlisHSPlasH produces fluid-particle VTK files and impeller OBJ files.
-2. Splashsurf reconstructs a fluid-surface OBJ sequence.
-3. Blender renders the fluid and impeller sequences against the retained background patterns.
+| Section | Path | What it does |
+|---|---|---|
+| 🧪 **Data generation** | [`data_generation/`](data_generation/) | Produces the synthetic training videos: SPlisHSPlasH fluid simulation → Splashsurf surface reconstruction → Blender rendering. |
+| 🔮 **Inference** | [`inference/`](inference/) | Runs the trained ViViT estimator on videos to predict cP (with an optional uncertainty variant). Ships weights + 50 sample clips. |
 
-This repository contains ViscNet configuration, rig meshes, fluid properties, and thin execution scripts. It does not vendor SPlisHSPlasH, Splashsurf, Blender, or generated datasets.
+The two sections are independent — you can run inference without the data
+pipeline, and vice-versa. Each folder has its own README and requirements.
 
-## Requirements
+---
 
-- Linux
-- SPlisHSPlasH 2.14.0 with Python bindings
-- Python packages listed in `splishsplash/requirements.txt` and `splashsurf/requirements.txt`
-- Blender 4.4.3
-- FFmpeg, only when encoding the rendered PNG sequence
+## Quick start — inference
 
-## 1. Particle simulation
-
-Run one fluid-property row at one impeller speed:
+Predict viscosity on the 50 bundled sample clips:
 
 ```bash
-python splishsplash/run_simulation.py \
-  --property-index 1 \
-  --rpm 270 \
-  --output outputs/sim_0101
+cd inference
+pip install -r requirements.txt
+python infer.py --model cp      # cP point estimate
+python infer.py --model gmm     # cP + uncertainty (K=5 mixture)
 ```
 
-The dataset grid uses 50 property rows and 10 speeds from 270 to 450 RPM in 20 RPM steps. Each run lasts 15 s and exports at 10 fps. The motor is powered until 11.5 s, stops at 12.5 s, and then decays freely.
+Two trained checkpoints are included (each the best across three training seeds):
 
-The nominal vessel diameter is 135 mm. The impeller radius is 40 mm, its diameter is 80 mm, and its immersion depth is 40 mm.
+| Variant | Output | Test cP MAE |
+|---|---|---|
+| `cp` — cP regression | a single cP estimate | ~4.06 cP |
+| `gmm` — GMM (K=5) | cP estimate **+ uncertainty** | ~2.39 cP |
 
-## 2. Surface reconstruction
+See [`inference/README.md`](inference/README.md) for the model description, the
+five-window evaluation scheme, and how to run on your own clips.
+
+## Quick start — data generation
+
+Generate one synthetic clip (one fluid property × one impeller speed):
 
 ```bash
-python splashsurf/reconstruct.py \
-  --input outputs/sim_0101/vtk \
-  --output outputs/sim_0101/mesh
+cd data_generation
+python splishsplash/run_simulation.py --property-index 1 --rpm 270 --output outputs/sim_0101
+python splashsurf/reconstruct.py     --input outputs/sim_0101/vtk --output outputs/sim_0101/mesh
+python blender/render.py             --mesh  outputs/sim_0101/mesh --output outputs/sim_0101/render
 ```
 
-Frames 101–150 are reconstructed by default.
+Requires SPlisHSPlasH 2.14.0, Splashsurf, and Blender 4.4.3. The full grid (50
+fluid properties × 10 speeds, ×10 backgrounds ×10 lighting = 50,000 clips) and
+all parameters are documented in [`data_generation/README.md`](data_generation/README.md).
 
-## 3. Blender rendering
+---
 
-```bash
-blender -b --python blender/render.py -- \
-  --fluid-dir outputs/sim_0101/mesh \
-  --impeller-dir outputs/sim_0101/obj \
-  --background blender/backgrounds/checkerboard/checkerboard_1900x1000_15px_00_15px_1p07mm.png \
-  --output outputs/sim_0101/render \
-  --device OPTIX
-```
+## How ViscNet works (short version)
 
-Use `--device CPU` when a supported Cycles GPU is unavailable. The script writes 50 PNG frames at 224 × 224. Encode the video with:
+A **ViViT** video transformer (~9.2M params) is trained in two stages: it first
+regresses four dimensionless flow groups (Reynolds, Capillary, Weber, Froude) to
+build a physics-structured prior, then a viscosity head is fine-tuned end-to-end
+to predict `log10(cP)`. Each 60-frame clip is scored with five 30-frame windows
+(offsets {5,10,15,20,25}) whose predictions are averaged. The `gmm` variant adds
+a Gaussian-mixture head for calibrated uncertainty. Full details and provenance
+are in the [inference README](inference/README.md).
 
-```bash
-ffmpeg -framerate 10 -i outputs/sim_0101/render/%04d.png \
-  -c:v libx264 -pix_fmt yuv420p outputs/sim_0101.mp4
-```
+## Citation
 
-Repeat the render for the five checkerboard and five white-noise images in `blender/backgrounds/`, and vary `--seed` from 0 to 9 for the ten lighting conditions.
-
-## Configuration
-
-- `splishsplash/scene.json`: DFSPH scene and solver settings.
-- `splishsplash/properties.csv`: executed 50-row glycerol–water property table.
-- `splashsurf/config.json`: surface-reconstruction settings.
-- `blender/config.json`: camera, material, lighting, and output settings.
-
-The included executed property table spans 0.8927–300 cP.
+If you use ViscNet, please cite the ViscNet paper. License: TBD by the authors.

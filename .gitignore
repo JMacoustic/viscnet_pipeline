@@ -3,3 +3,7 @@ __pycache__/
 .venv/
 outputs/
 *.blend1
+
+# inference outputs
+preds_*.csv
+.DS_Store
