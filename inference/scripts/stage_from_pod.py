@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
-"""Populate the package with model files, weights, and 50 sample clips.
+"""Populate the package with model files, weights, and 100 sample clips.
 
 Runs ON the ViscNet pod (needs /root/Viscnet). Copies the 3 ViViT model files
 (with imports rewritten to the package layout and timm made optional), the two
-seed-1206 checkpoints + their standardizer, and 50 real test clips
-(10 viscosity classes x 5 clips with varied pattern/RPM) with a labels.json.
+seed-1206 checkpoints + their standardizer, and 100 real test clips
+(10 viscosity classes x 10 clips, covering all 10 background patterns and
+spreading stirring RPM + lighting) with a labels.json.
 
-Idempotent: safe to re-run.
+Idempotent + deterministic: safe to re-run, always selects the same 100 clips.
 """
 
 import collections
@@ -17,6 +18,7 @@ import shutil
 REPO = "/root/Viscnet"
 PKG = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))  # package root
 TEST_MANIFEST = f"{REPO}/dataset/realdata_auto_260630_less_bubble/real_test_seed1206/manifest.json"
+PER_CLASS = 10
 
 
 def _patch(src, dst, replacements, lazy_timm):
@@ -42,6 +44,12 @@ def copy_model_files():
              "from .vivit.configuration_vivit import VivitConfig"),
             ("from models.vivit.modeling_vivit import VivitModel",
              "from .vivit.modeling_vivit import VivitModel"),
+            # drop stale/misleading inline comments (default is hidden 256 / 10 layers,
+            # not "ViViT-L / 20"); the accurate note is in the block comment above.
+            ("hidden_size=int(hidden_size),  # ViViT-L",
+             "hidden_size=int(hidden_size),"),
+            ("num_hidden_layers=int(num_hidden_layers),  # 20",
+             "num_hidden_layers=int(num_hidden_layers),"),
         ],
         lazy_timm=True,
     )
@@ -77,42 +85,58 @@ def copy_weights():
 
 
 def _meta(name):
-    parts = name.split("_")
-    return (
-        int(parts[0].replace("class", "")),
-        int(parts[2].replace("pattern", "")),
-        int(parts[3].replace("RPM", "")),
-    )
+    p = name.split("_")
+    return {
+        "cls": int(p[0].replace("class", "")),
+        "light": int(p[1].replace("light", "")),
+        "pattern": int(p[2].replace("pattern", "")),
+        "rpm": int(p[3].replace("RPM", "")),
+    }
 
 
-def select_clips(per_class=5):
+def select_clips(per_class=PER_CLASS):
+    """10 clips/class: one per background pattern where possible, greedily
+    spreading stirring RPM + lighting. Deterministic (no randomness)."""
     samples = json.load(open(TEST_MANIFEST))
     by_class = collections.defaultdict(list)
     for s in samples:
-        cls, pat, rpm = _meta(s["name"])
-        by_class[cls].append((pat, rpm, s))
+        by_class[_meta(s["name"])["cls"]].append((_meta(s["name"]), s))
 
     selected = []
     for cls in sorted(by_class):
         by_pat = collections.defaultdict(list)
-        for pat, rpm, s in by_class[cls]:
-            by_pat[pat].append((rpm, s))
-        pats = sorted(by_pat)
-        picked = []
-        # one clip per pattern (up to per_class patterns), varying RPM across patterns
-        for i, pat in enumerate(pats[:per_class]):
-            lst = sorted(by_pat[pat], key=lambda t: t[0])  # by RPM
-            rpm, s = lst[(i * len(lst) // per_class) % len(lst)]
+        for m, s in by_class[cls]:
+            by_pat[m["pattern"]].append((m, s))
+        rpm_used, light_used = collections.Counter(), collections.Counter()
+        picked, names = [], set()
+
+        def take(cands):
+            cands = [c for c in cands if c[1]["name"] not in names]
+            if not cands:
+                return False
+            m, s = min(cands, key=lambda c: (
+                rpm_used[c[0]["rpm"]] + light_used[c[0]["light"]],
+                c[0]["rpm"], c[0]["light"], c[1]["name"]))
+            rpm_used[m["rpm"]] += 1
+            light_used[m["light"]] += 1
             picked.append(s)
-        # if fewer than per_class distinct patterns, fill from remaining clips
-        if len(picked) < per_class:
-            names = {s["name"] for s in picked}
-            for pat, rpm, s in sorted(by_class[cls], key=lambda t: (t[0], t[1])):
-                if s["name"] not in names:
-                    picked.append(s)
-                    names.add(s["name"])
-                if len(picked) == per_class:
+            names.add(s["name"])
+            return True
+
+        # round 1: one clip from each pattern present (pattern order 0..9)
+        for pat in sorted(by_pat):
+            if len(picked) >= per_class:
+                break
+            take(by_pat[pat])
+        # round 2+: fill remaining slots, still spreading rpm/light, cycling patterns
+        while len(picked) < per_class:
+            progressed = False
+            for pat in sorted(by_pat):
+                if len(picked) >= per_class:
                     break
+                progressed |= take(by_pat[pat])
+            if not progressed:
+                break
         selected.extend(picked[:per_class])
     return selected
 
@@ -140,7 +164,6 @@ def copy_clips_and_labels(selected):
             "density_kg_m3": num("density"),
             "surface_tension_N_m": num("surface_tension"),
             "kinematic_viscosity_m2_s": num("kinematic_viscosity"),
-            "Ga": num("Ga"),
         })
     labels.sort(key=lambda r: (r["viscosity_class"], r["pattern"], r["RPM"]))
     json.dump(labels, open(f"{PKG}/data/labels.json", "w"), indent=1)
@@ -150,6 +173,6 @@ def copy_clips_and_labels(selected):
 if __name__ == "__main__":
     copy_model_files()
     copy_weights()
-    sel = select_clips(per_class=5)
+    sel = select_clips(per_class=PER_CLASS)
     copy_clips_and_labels(sel)
     print("staging complete ->", PKG)

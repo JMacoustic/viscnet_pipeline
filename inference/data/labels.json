@@ -1,123 +1,223 @@
 [
  {
-  "name": "class0_light2_pattern0_RPM270",
+  "name": "class0_light0_pattern0_RPM270",
   "cP": 0.89273932,
   "viscosity_class": 0,
   "RPM": 270.0,
   "pattern": 0,
-  "light": 2,
-  "density_kg_m3": 996.8902499,
-  "surface_tension_N_m": 0.07197,
-  "kinematic_viscosity_m2_s": 8.95524177e-07,
-  "Ga": null
- },
- {
-  "name": "class0_light0_pattern1_RPM290",
-  "cP": 0.89273932,
-  "viscosity_class": 0,
-  "RPM": 290.0,
-  "pattern": 1,
   "light": 0,
   "density_kg_m3": 996.8902499,
   "surface_tension_N_m": 0.07197,
-  "kinematic_viscosity_m2_s": 8.95524177e-07,
-  "Ga": null
+  "kinematic_viscosity_m2_s": 8.95524177e-07
  },
  {
-  "name": "class0_light3_pattern2_RPM330",
+  "name": "class0_light2_pattern1_RPM310",
   "cP": 0.89273932,
   "viscosity_class": 0,
-  "RPM": 330.0,
-  "pattern": 2,
-  "light": 3,
+  "RPM": 310.0,
+  "pattern": 1,
+  "light": 2,
   "density_kg_m3": 996.8902499,
   "surface_tension_N_m": 0.07197,
-  "kinematic_viscosity_m2_s": 8.95524177e-07,
-  "Ga": null
+  "kinematic_viscosity_m2_s": 8.95524177e-07
  },
  {
-  "name": "class0_light1_pattern3_RPM370",
+  "name": "class0_light1_pattern2_RPM290",
   "cP": 0.89273932,
   "viscosity_class": 0,
-  "RPM": 370.0,
-  "pattern": 3,
+  "RPM": 290.0,
+  "pattern": 2,
   "light": 1,
   "density_kg_m3": 996.8902499,
   "surface_tension_N_m": 0.07197,
-  "kinematic_viscosity_m2_s": 8.95524177e-07,
-  "Ga": null
+  "kinematic_viscosity_m2_s": 8.95524177e-07
  },
  {
-  "name": "class0_light2_pattern4_RPM370",
+  "name": "class0_light3_pattern3_RPM330",
   "cP": 0.89273932,
   "viscosity_class": 0,
-  "RPM": 370.0,
+  "RPM": 330.0,
+  "pattern": 3,
+  "light": 3,
+  "density_kg_m3": 996.8902499,
+  "surface_tension_N_m": 0.07197,
+  "kinematic_viscosity_m2_s": 8.95524177e-07
+ },
+ {
+  "name": "class0_light2_pattern4_RPM350",
+  "cP": 0.89273932,
+  "viscosity_class": 0,
+  "RPM": 350.0,
   "pattern": 4,
   "light": 2,
   "density_kg_m3": 996.8902499,
   "surface_tension_N_m": 0.07197,
-  "kinematic_viscosity_m2_s": 8.95524177e-07,
-  "Ga": null
+  "kinematic_viscosity_m2_s": 8.95524177e-07
  },
  {
-  "name": "class1_light2_pattern0_RPM270",
+  "name": "class0_light1_pattern5_RPM410",
+  "cP": 0.89273932,
+  "viscosity_class": 0,
+  "RPM": 410.0,
+  "pattern": 5,
+  "light": 1,
+  "density_kg_m3": 996.8902499,
+  "surface_tension_N_m": 0.07197,
+  "kinematic_viscosity_m2_s": 8.95524177e-07
+ },
+ {
+  "name": "class0_light0_pattern6_RPM450",
+  "cP": 0.89273932,
+  "viscosity_class": 0,
+  "RPM": 450.0,
+  "pattern": 6,
+  "light": 0,
+  "density_kg_m3": 996.8902499,
+  "surface_tension_N_m": 0.07197,
+  "kinematic_viscosity_m2_s": 8.95524177e-07
+ },
+ {
+  "name": "class0_light3_pattern7_RPM310",
+  "cP": 0.89273932,
+  "viscosity_class": 0,
+  "RPM": 310.0,
+  "pattern": 7,
+  "light": 3,
+  "density_kg_m3": 996.8902499,
+  "surface_tension_N_m": 0.07197,
+  "kinematic_viscosity_m2_s": 8.95524177e-07
+ },
+ {
+  "name": "class0_light0_pattern8_RPM370",
+  "cP": 0.89273932,
+  "viscosity_class": 0,
+  "RPM": 370.0,
+  "pattern": 8,
+  "light": 0,
+  "density_kg_m3": 996.8902499,
+  "surface_tension_N_m": 0.07197,
+  "kinematic_viscosity_m2_s": 8.95524177e-07
+ },
+ {
+  "name": "class0_light1_pattern9_RPM330",
+  "cP": 0.89273932,
+  "viscosity_class": 0,
+  "RPM": 330.0,
+  "pattern": 9,
+  "light": 1,
+  "density_kg_m3": 996.8902499,
+  "surface_tension_N_m": 0.07197,
+  "kinematic_viscosity_m2_s": 8.95524177e-07
+ },
+ {
+  "name": "class1_light0_pattern0_RPM270",
   "cP": 5.840675955,
   "viscosity_class": 1,
   "RPM": 270.0,
   "pattern": 0,
-  "light": 2,
+  "light": 0,
   "density_kg_m3": 1131.653628,
   "surface_tension_N_m": 0.067771852,
-  "kinematic_viscosity_m2_s": 5.1611869639999995e-06,
-  "Ga": null
+  "kinematic_viscosity_m2_s": 5.1611869639999995e-06
  },
  {
-  "name": "class1_light3_pattern1_RPM330",
+  "name": "class1_light2_pattern1_RPM330",
   "cP": 5.840675955,
   "viscosity_class": 1,
   "RPM": 330.0,
   "pattern": 1,
-  "light": 3,
-  "density_kg_m3": 1131.653628,
-  "surface_tension_N_m": 0.067771852,
-  "kinematic_viscosity_m2_s": 5.1611869639999995e-06,
-  "Ga": null
- },
- {
-  "name": "class1_light2_pattern2_RPM370",
-  "cP": 5.840675955,
-  "viscosity_class": 1,
-  "RPM": 370.0,
-  "pattern": 2,
   "light": 2,
   "density_kg_m3": 1131.653628,
   "surface_tension_N_m": 0.067771852,
-  "kinematic_viscosity_m2_s": 5.1611869639999995e-06,
-  "Ga": null
+  "kinematic_viscosity_m2_s": 5.1611869639999995e-06
  },
  {
-  "name": "class1_light1_pattern3_RPM390",
+  "name": "class1_light3_pattern2_RPM410",
   "cP": 5.840675955,
   "viscosity_class": 1,
-  "RPM": 390.0,
+  "RPM": 410.0,
+  "pattern": 2,
+  "light": 3,
+  "density_kg_m3": 1131.653628,
+  "surface_tension_N_m": 0.067771852,
+  "kinematic_viscosity_m2_s": 5.1611869639999995e-06
+ },
+ {
+  "name": "class1_light1_pattern3_RPM310",
+  "cP": 5.840675955,
+  "viscosity_class": 1,
+  "RPM": 310.0,
   "pattern": 3,
   "light": 1,
   "density_kg_m3": 1131.653628,
   "surface_tension_N_m": 0.067771852,
-  "kinematic_viscosity_m2_s": 5.1611869639999995e-06,
-  "Ga": 23561420.284597635
+  "kinematic_viscosity_m2_s": 5.1611869639999995e-06
  },
  {
-  "name": "class1_light2_pattern4_RPM450",
+  "name": "class1_light2_pattern4_RPM350",
   "cP": 5.840675955,
   "viscosity_class": 1,
-  "RPM": 450.0,
+  "RPM": 350.0,
   "pattern": 4,
   "light": 2,
   "density_kg_m3": 1131.653628,
   "surface_tension_N_m": 0.067771852,
-  "kinematic_viscosity_m2_s": 5.1611869639999995e-06,
-  "Ga": 23561420.284597635
+  "kinematic_viscosity_m2_s": 5.1611869639999995e-06
+ },
+ {
+  "name": "class1_light0_pattern5_RPM370",
+  "cP": 5.840675955,
+  "viscosity_class": 1,
+  "RPM": 370.0,
+  "pattern": 5,
+  "light": 0,
+  "density_kg_m3": 1131.653628,
+  "surface_tension_N_m": 0.067771852,
+  "kinematic_viscosity_m2_s": 5.1611869639999995e-06
+ },
+ {
+  "name": "class1_light1_pattern6_RPM290",
+  "cP": 5.840675955,
+  "viscosity_class": 1,
+  "RPM": 290.0,
+  "pattern": 6,
+  "light": 1,
+  "density_kg_m3": 1131.653628,
+  "surface_tension_N_m": 0.067771852,
+  "kinematic_viscosity_m2_s": 5.1611869639999995e-06
+ },
+ {
+  "name": "class1_light3_pattern7_RPM390",
+  "cP": 5.840675955,
+  "viscosity_class": 1,
+  "RPM": 390.0,
+  "pattern": 7,
+  "light": 3,
+  "density_kg_m3": 1131.653628,
+  "surface_tension_N_m": 0.067771852,
+  "kinematic_viscosity_m2_s": 5.1611869639999995e-06
+ },
+ {
+  "name": "class1_light3_pattern8_RPM430",
+  "cP": 5.840675955,
+  "viscosity_class": 1,
+  "RPM": 430.0,
+  "pattern": 8,
+  "light": 3,
+  "density_kg_m3": 1131.653628,
+  "surface_tension_N_m": 0.067771852,
+  "kinematic_viscosity_m2_s": 5.1611869639999995e-06
+ },
+ {
+  "name": "class1_light1_pattern9_RPM450",
+  "cP": 5.840675955,
+  "viscosity_class": 1,
+  "RPM": 450.0,
+  "pattern": 9,
+  "light": 1,
+  "density_kg_m3": 1131.653628,
+  "surface_tension_N_m": 0.067771852,
+  "kinematic_viscosity_m2_s": 5.1611869639999995e-06
  },
  {
   "name": "class2_light0_pattern0_RPM270",
@@ -128,8 +228,7 @@
   "light": 0,
   "density_kg_m3": 1165.448528,
   "surface_tension_N_m": 0.066628846,
-  "kinematic_viscosity_m2_s": 1.0910884109999998e-05,
-  "Ga": null
+  "kinematic_viscosity_m2_s": 1.0910884109999998e-05
  },
  {
   "name": "class2_light1_pattern1_RPM290",
@@ -140,44 +239,95 @@
   "light": 1,
   "density_kg_m3": 1165.448528,
   "surface_tension_N_m": 0.066628846,
-  "kinematic_viscosity_m2_s": 1.0910884109999998e-05,
-  "Ga": null
+  "kinematic_viscosity_m2_s": 1.0910884109999998e-05
  },
  {
-  "name": "class2_light2_pattern2_RPM370",
+  "name": "class2_light2_pattern2_RPM310",
   "cP": 12.71607382,
   "viscosity_class": 2,
-  "RPM": 370.0,
+  "RPM": 310.0,
   "pattern": 2,
   "light": 2,
   "density_kg_m3": 1165.448528,
   "surface_tension_N_m": 0.066628846,
-  "kinematic_viscosity_m2_s": 1.0910884109999998e-05,
-  "Ga": 5272065.092143475
+  "kinematic_viscosity_m2_s": 1.0910884109999998e-05
  },
  {
-  "name": "class2_light2_pattern3_RPM410",
+  "name": "class2_light3_pattern3_RPM330",
   "cP": 12.71607382,
   "viscosity_class": 2,
-  "RPM": 410.0,
+  "RPM": 330.0,
   "pattern": 3,
-  "light": 2,
+  "light": 3,
   "density_kg_m3": 1165.448528,
   "surface_tension_N_m": 0.066628846,
-  "kinematic_viscosity_m2_s": 1.0910884109999998e-05,
-  "Ga": null
+  "kinematic_viscosity_m2_s": 1.0910884109999998e-05
  },
  {
-  "name": "class2_light0_pattern4_RPM390",
+  "name": "class2_light1_pattern4_RPM370",
+  "cP": 12.71607382,
+  "viscosity_class": 2,
+  "RPM": 370.0,
+  "pattern": 4,
+  "light": 1,
+  "density_kg_m3": 1165.448528,
+  "surface_tension_N_m": 0.066628846,
+  "kinematic_viscosity_m2_s": 1.0910884109999998e-05
+ },
+ {
+  "name": "class2_light3_pattern5_RPM350",
+  "cP": 12.71607382,
+  "viscosity_class": 2,
+  "RPM": 350.0,
+  "pattern": 5,
+  "light": 3,
+  "density_kg_m3": 1165.448528,
+  "surface_tension_N_m": 0.066628846,
+  "kinematic_viscosity_m2_s": 1.0910884109999998e-05
+ },
+ {
+  "name": "class2_light2_pattern6_RPM390",
   "cP": 12.71607382,
   "viscosity_class": 2,
   "RPM": 390.0,
-  "pattern": 4,
+  "pattern": 6,
+  "light": 2,
+  "density_kg_m3": 1165.448528,
+  "surface_tension_N_m": 0.066628846,
+  "kinematic_viscosity_m2_s": 1.0910884109999998e-05
+ },
+ {
+  "name": "class2_light0_pattern7_RPM350",
+  "cP": 12.71607382,
+  "viscosity_class": 2,
+  "RPM": 350.0,
+  "pattern": 7,
   "light": 0,
   "density_kg_m3": 1165.448528,
   "surface_tension_N_m": 0.066628846,
-  "kinematic_viscosity_m2_s": 1.0910884109999998e-05,
-  "Ga": null
+  "kinematic_viscosity_m2_s": 1.0910884109999998e-05
+ },
+ {
+  "name": "class2_light2_pattern8_RPM410",
+  "cP": 12.71607382,
+  "viscosity_class": 2,
+  "RPM": 410.0,
+  "pattern": 8,
+  "light": 2,
+  "density_kg_m3": 1165.448528,
+  "surface_tension_N_m": 0.066628846,
+  "kinematic_viscosity_m2_s": 1.0910884109999998e-05
+ },
+ {
+  "name": "class2_light0_pattern9_RPM430",
+  "cP": 12.71607382,
+  "viscosity_class": 2,
+  "RPM": 430.0,
+  "pattern": 9,
+  "light": 0,
+  "density_kg_m3": 1165.448528,
+  "surface_tension_N_m": 0.066628846,
+  "kinematic_viscosity_m2_s": 1.0910884109999998e-05
  },
  {
   "name": "class3_light3_pattern0_RPM290",
@@ -188,56 +338,106 @@
   "light": 3,
   "density_kg_m3": 1185.997325,
   "surface_tension_N_m": 0.065900167,
-  "kinematic_viscosity_m2_s": 1.947786684e-05,
-  "Ga": null
+  "kinematic_viscosity_m2_s": 1.947786684e-05
  },
  {
-  "name": "class3_light0_pattern1_RPM290",
+  "name": "class3_light0_pattern1_RPM270",
   "cP": 23.10069796,
   "viscosity_class": 3,
-  "RPM": 290.0,
+  "RPM": 270.0,
   "pattern": 1,
   "light": 0,
   "density_kg_m3": 1185.997325,
   "surface_tension_N_m": 0.065900167,
-  "kinematic_viscosity_m2_s": 1.947786684e-05,
-  "Ga": null
+  "kinematic_viscosity_m2_s": 1.947786684e-05
  },
  {
-  "name": "class3_light0_pattern2_RPM370",
+  "name": "class3_light2_pattern2_RPM310",
   "cP": 23.10069796,
   "viscosity_class": 3,
-  "RPM": 370.0,
+  "RPM": 310.0,
   "pattern": 2,
-  "light": 0,
+  "light": 2,
   "density_kg_m3": 1185.997325,
   "surface_tension_N_m": 0.065900167,
-  "kinematic_viscosity_m2_s": 1.947786684e-05,
-  "Ga": null
+  "kinematic_viscosity_m2_s": 1.947786684e-05
  },
  {
-  "name": "class3_light0_pattern3_RPM410",
+  "name": "class3_light1_pattern3_RPM410",
   "cP": 23.10069796,
   "viscosity_class": 3,
   "RPM": 410.0,
   "pattern": 3,
-  "light": 0,
-  "density_kg_m3": 1185.997325,
-  "surface_tension_N_m": 0.065900167,
-  "kinematic_viscosity_m2_s": 1.947786684e-05,
-  "Ga": null
- },
- {
-  "name": "class3_light1_pattern4_RPM390",
-  "cP": 23.10069796,
-  "viscosity_class": 3,
-  "RPM": 390.0,
-  "pattern": 4,
   "light": 1,
   "density_kg_m3": 1185.997325,
   "surface_tension_N_m": 0.065900167,
-  "kinematic_viscosity_m2_s": 1.947786684e-05,
-  "Ga": 1654313.6935892024
+  "kinematic_viscosity_m2_s": 1.947786684e-05
+ },
+ {
+  "name": "class3_light0_pattern4_RPM330",
+  "cP": 23.10069796,
+  "viscosity_class": 3,
+  "RPM": 330.0,
+  "pattern": 4,
+  "light": 0,
+  "density_kg_m3": 1185.997325,
+  "surface_tension_N_m": 0.065900167,
+  "kinematic_viscosity_m2_s": 1.947786684e-05
+ },
+ {
+  "name": "class3_light3_pattern5_RPM350",
+  "cP": 23.10069796,
+  "viscosity_class": 3,
+  "RPM": 350.0,
+  "pattern": 5,
+  "light": 3,
+  "density_kg_m3": 1185.997325,
+  "surface_tension_N_m": 0.065900167,
+  "kinematic_viscosity_m2_s": 1.947786684e-05
+ },
+ {
+  "name": "class3_light1_pattern6_RPM390",
+  "cP": 23.10069796,
+  "viscosity_class": 3,
+  "RPM": 390.0,
+  "pattern": 6,
+  "light": 1,
+  "density_kg_m3": 1185.997325,
+  "surface_tension_N_m": 0.065900167,
+  "kinematic_viscosity_m2_s": 1.947786684e-05
+ },
+ {
+  "name": "class3_light2_pattern7_RPM270",
+  "cP": 23.10069796,
+  "viscosity_class": 3,
+  "RPM": 270.0,
+  "pattern": 7,
+  "light": 2,
+  "density_kg_m3": 1185.997325,
+  "surface_tension_N_m": 0.065900167,
+  "kinematic_viscosity_m2_s": 1.947786684e-05
+ },
+ {
+  "name": "class3_light1_pattern8_RPM430",
+  "cP": 23.10069796,
+  "viscosity_class": 3,
+  "RPM": 430.0,
+  "pattern": 8,
+  "light": 1,
+  "density_kg_m3": 1185.997325,
+  "surface_tension_N_m": 0.065900167,
+  "kinematic_viscosity_m2_s": 1.947786684e-05
+ },
+ {
+  "name": "class3_light0_pattern9_RPM370",
+  "cP": 23.10069796,
+  "viscosity_class": 3,
+  "RPM": 370.0,
+  "pattern": 9,
+  "light": 0,
+  "density_kg_m3": 1185.997325,
+  "surface_tension_N_m": 0.065900167,
+  "kinematic_viscosity_m2_s": 1.947786684e-05
  },
  {
   "name": "class4_light3_pattern0_RPM270",
@@ -248,20 +448,18 @@
   "light": 3,
   "density_kg_m3": 1200.59357,
   "surface_tension_N_m": 0.065364837,
-  "kinematic_viscosity_m2_s": 3.182772136e-05,
-  "Ga": null
+  "kinematic_viscosity_m2_s": 3.182772136e-05
  },
  {
-  "name": "class4_light3_pattern1_RPM310",
+  "name": "class4_light0_pattern1_RPM330",
   "cP": 38.2121576,
   "viscosity_class": 4,
-  "RPM": 310.0,
+  "RPM": 330.0,
   "pattern": 1,
-  "light": 3,
+  "light": 0,
   "density_kg_m3": 1200.59357,
   "surface_tension_N_m": 0.065364837,
-  "kinematic_viscosity_m2_s": 3.182772136e-05,
-  "Ga": 619568.8218533596
+  "kinematic_viscosity_m2_s": 3.182772136e-05
  },
  {
   "name": "class4_light1_pattern2_RPM310",
@@ -272,32 +470,84 @@
   "light": 1,
   "density_kg_m3": 1200.59357,
   "surface_tension_N_m": 0.065364837,
-  "kinematic_viscosity_m2_s": 3.182772136e-05,
-  "Ga": null
+  "kinematic_viscosity_m2_s": 3.182772136e-05
  },
  {
-  "name": "class4_light0_pattern3_RPM390",
+  "name": "class4_light2_pattern3_RPM370",
   "cP": 38.2121576,
   "viscosity_class": 4,
-  "RPM": 390.0,
+  "RPM": 370.0,
   "pattern": 3,
-  "light": 0,
-  "density_kg_m3": 1200.59357,
-  "surface_tension_N_m": 0.065364837,
-  "kinematic_viscosity_m2_s": 3.182772136e-05,
-  "Ga": null
- },
- {
-  "name": "class4_light2_pattern4_RPM450",
-  "cP": 38.2121576,
-  "viscosity_class": 4,
-  "RPM": 450.0,
-  "pattern": 4,
   "light": 2,
   "density_kg_m3": 1200.59357,
   "surface_tension_N_m": 0.065364837,
-  "kinematic_viscosity_m2_s": 3.182772136e-05,
-  "Ga": 619568.8218533596
+  "kinematic_viscosity_m2_s": 3.182772136e-05
+ },
+ {
+  "name": "class4_light0_pattern4_RPM290",
+  "cP": 38.2121576,
+  "viscosity_class": 4,
+  "RPM": 290.0,
+  "pattern": 4,
+  "light": 0,
+  "density_kg_m3": 1200.59357,
+  "surface_tension_N_m": 0.065364837,
+  "kinematic_viscosity_m2_s": 3.182772136e-05
+ },
+ {
+  "name": "class4_light1_pattern5_RPM350",
+  "cP": 38.2121576,
+  "viscosity_class": 4,
+  "RPM": 350.0,
+  "pattern": 5,
+  "light": 1,
+  "density_kg_m3": 1200.59357,
+  "surface_tension_N_m": 0.065364837,
+  "kinematic_viscosity_m2_s": 3.182772136e-05
+ },
+ {
+  "name": "class4_light2_pattern6_RPM430",
+  "cP": 38.2121576,
+  "viscosity_class": 4,
+  "RPM": 430.0,
+  "pattern": 6,
+  "light": 2,
+  "density_kg_m3": 1200.59357,
+  "surface_tension_N_m": 0.065364837,
+  "kinematic_viscosity_m2_s": 3.182772136e-05
+ },
+ {
+  "name": "class4_light3_pattern7_RPM410",
+  "cP": 38.2121576,
+  "viscosity_class": 4,
+  "RPM": 410.0,
+  "pattern": 7,
+  "light": 3,
+  "density_kg_m3": 1200.59357,
+  "surface_tension_N_m": 0.065364837,
+  "kinematic_viscosity_m2_s": 3.182772136e-05
+ },
+ {
+  "name": "class4_light0_pattern8_RPM390",
+  "cP": 38.2121576,
+  "viscosity_class": 4,
+  "RPM": 390.0,
+  "pattern": 8,
+  "light": 0,
+  "density_kg_m3": 1200.59357,
+  "surface_tension_N_m": 0.065364837,
+  "kinematic_viscosity_m2_s": 3.182772136e-05
+ },
+ {
+  "name": "class4_light3_pattern9_RPM270",
+  "cP": 38.2121576,
+  "viscosity_class": 4,
+  "RPM": 270.0,
+  "pattern": 9,
+  "light": 3,
+  "density_kg_m3": 1200.59357,
+  "surface_tension_N_m": 0.065364837,
+  "kinematic_viscosity_m2_s": 3.182772136e-05
  },
  {
   "name": "class5_light1_pattern0_RPM290",
@@ -308,44 +558,40 @@
   "light": 1,
   "density_kg_m3": 1211.800372,
   "surface_tension_N_m": 0.064943059,
-  "kinematic_viscosity_m2_s": 4.9129257959999996e-05,
-  "Ga": null
+  "kinematic_viscosity_m2_s": 4.9129257959999996e-05
  },
  {
-  "name": "class5_light0_pattern1_RPM350",
+  "name": "class5_light3_pattern1_RPM330",
   "cP": 59.53485305,
   "viscosity_class": 5,
-  "RPM": 350.0,
+  "RPM": 330.0,
   "pattern": 1,
-  "light": 0,
+  "light": 3,
   "density_kg_m3": 1211.800372,
   "surface_tension_N_m": 0.064943059,
-  "kinematic_viscosity_m2_s": 4.9129257959999996e-05,
-  "Ga": null
+  "kinematic_viscosity_m2_s": 4.9129257959999996e-05
  },
  {
-  "name": "class5_light0_pattern2_RPM290",
+  "name": "class5_light0_pattern2_RPM270",
   "cP": 59.53485305,
   "viscosity_class": 5,
-  "RPM": 290.0,
+  "RPM": 270.0,
   "pattern": 2,
   "light": 0,
   "density_kg_m3": 1211.800372,
   "surface_tension_N_m": 0.064943059,
-  "kinematic_viscosity_m2_s": 4.9129257959999996e-05,
-  "Ga": 260028.07459397643
+  "kinematic_viscosity_m2_s": 4.9129257959999996e-05
  },
  {
-  "name": "class5_light3_pattern3_RPM350",
+  "name": "class5_light2_pattern3_RPM390",
   "cP": 59.53485305,
   "viscosity_class": 5,
-  "RPM": 350.0,
+  "RPM": 390.0,
   "pattern": 3,
-  "light": 3,
+  "light": 2,
   "density_kg_m3": 1211.800372,
   "surface_tension_N_m": 0.064943059,
-  "kinematic_viscosity_m2_s": 4.9129257959999996e-05,
-  "Ga": 260028.07459397643
+  "kinematic_viscosity_m2_s": 4.9129257959999996e-05
  },
  {
   "name": "class5_light3_pattern4_RPM370",
@@ -356,8 +602,62 @@
   "light": 3,
   "density_kg_m3": 1211.800372,
   "surface_tension_N_m": 0.064943059,
-  "kinematic_viscosity_m2_s": 4.9129257959999996e-05,
-  "Ga": null
+  "kinematic_viscosity_m2_s": 4.9129257959999996e-05
+ },
+ {
+  "name": "class5_light0_pattern5_RPM310",
+  "cP": 59.53485305,
+  "viscosity_class": 5,
+  "RPM": 310.0,
+  "pattern": 5,
+  "light": 0,
+  "density_kg_m3": 1211.800372,
+  "surface_tension_N_m": 0.064943059,
+  "kinematic_viscosity_m2_s": 4.9129257959999996e-05
+ },
+ {
+  "name": "class5_light1_pattern6_RPM410",
+  "cP": 59.53485305,
+  "viscosity_class": 5,
+  "RPM": 410.0,
+  "pattern": 6,
+  "light": 1,
+  "density_kg_m3": 1211.800372,
+  "surface_tension_N_m": 0.064943059,
+  "kinematic_viscosity_m2_s": 4.9129257959999996e-05
+ },
+ {
+  "name": "class5_light0_pattern7_RPM270",
+  "cP": 59.53485305,
+  "viscosity_class": 5,
+  "RPM": 270.0,
+  "pattern": 7,
+  "light": 0,
+  "density_kg_m3": 1211.800372,
+  "surface_tension_N_m": 0.064943059,
+  "kinematic_viscosity_m2_s": 4.9129257959999996e-05
+ },
+ {
+  "name": "class5_light3_pattern8_RPM350",
+  "cP": 59.53485305,
+  "viscosity_class": 5,
+  "RPM": 350.0,
+  "pattern": 8,
+  "light": 3,
+  "density_kg_m3": 1211.800372,
+  "surface_tension_N_m": 0.064943059,
+  "kinematic_viscosity_m2_s": 4.9129257959999996e-05
+ },
+ {
+  "name": "class5_light2_pattern9_RPM430",
+  "cP": 59.53485305,
+  "viscosity_class": 5,
+  "RPM": 430.0,
+  "pattern": 9,
+  "light": 2,
+  "density_kg_m3": 1211.800372,
+  "surface_tension_N_m": 0.064943059,
+  "kinematic_viscosity_m2_s": 4.9129257959999996e-05
  },
  {
   "name": "class6_light3_pattern0_RPM270",
@@ -368,56 +668,106 @@
   "light": 3,
   "density_kg_m3": 1220.823366,
   "surface_tension_N_m": 0.064596279,
-  "kinematic_viscosity_m2_s": 7.281398376999999e-05,
-  "Ga": 118378.01798497434
+  "kinematic_viscosity_m2_s": 7.281398376999999e-05
  },
  {
-  "name": "class6_light1_pattern1_RPM330",
+  "name": "class6_light2_pattern1_RPM310",
   "cP": 88.89301278,
   "viscosity_class": 6,
-  "RPM": 330.0,
+  "RPM": 310.0,
   "pattern": 1,
-  "light": 1,
-  "density_kg_m3": 1220.823366,
-  "surface_tension_N_m": 0.064596279,
-  "kinematic_viscosity_m2_s": 7.281398376999999e-05,
-  "Ga": null
- },
- {
-  "name": "class6_light2_pattern2_RPM330",
-  "cP": 88.89301278,
-  "viscosity_class": 6,
-  "RPM": 330.0,
-  "pattern": 2,
   "light": 2,
   "density_kg_m3": 1220.823366,
   "surface_tension_N_m": 0.064596279,
-  "kinematic_viscosity_m2_s": 7.281398376999999e-05,
-  "Ga": null
+  "kinematic_viscosity_m2_s": 7.281398376999999e-05
  },
  {
-  "name": "class6_light1_pattern3_RPM370",
+  "name": "class6_light1_pattern2_RPM290",
+  "cP": 88.89301278,
+  "viscosity_class": 6,
+  "RPM": 290.0,
+  "pattern": 2,
+  "light": 1,
+  "density_kg_m3": 1220.823366,
+  "surface_tension_N_m": 0.064596279,
+  "kinematic_viscosity_m2_s": 7.281398376999999e-05
+ },
+ {
+  "name": "class6_light0_pattern3_RPM350",
+  "cP": 88.89301278,
+  "viscosity_class": 6,
+  "RPM": 350.0,
+  "pattern": 3,
+  "light": 0,
+  "density_kg_m3": 1220.823366,
+  "surface_tension_N_m": 0.064596279,
+  "kinematic_viscosity_m2_s": 7.281398376999999e-05
+ },
+ {
+  "name": "class6_light0_pattern4_RPM330",
+  "cP": 88.89301278,
+  "viscosity_class": 6,
+  "RPM": 330.0,
+  "pattern": 4,
+  "light": 0,
+  "density_kg_m3": 1220.823366,
+  "surface_tension_N_m": 0.064596279,
+  "kinematic_viscosity_m2_s": 7.281398376999999e-05
+ },
+ {
+  "name": "class6_light3_pattern5_RPM370",
   "cP": 88.89301278,
   "viscosity_class": 6,
   "RPM": 370.0,
-  "pattern": 3,
-  "light": 1,
+  "pattern": 5,
+  "light": 3,
   "density_kg_m3": 1220.823366,
   "surface_tension_N_m": 0.064596279,
-  "kinematic_viscosity_m2_s": 7.281398376999999e-05,
-  "Ga": 118378.01798497434
+  "kinematic_viscosity_m2_s": 7.281398376999999e-05
  },
  {
-  "name": "class6_light2_pattern4_RPM390",
+  "name": "class6_light1_pattern6_RPM390",
   "cP": 88.89301278,
   "viscosity_class": 6,
   "RPM": 390.0,
-  "pattern": 4,
+  "pattern": 6,
+  "light": 1,
+  "density_kg_m3": 1220.823366,
+  "surface_tension_N_m": 0.064596279,
+  "kinematic_viscosity_m2_s": 7.281398376999999e-05
+ },
+ {
+  "name": "class6_light2_pattern7_RPM270",
+  "cP": 88.89301278,
+  "viscosity_class": 6,
+  "RPM": 270.0,
+  "pattern": 7,
   "light": 2,
   "density_kg_m3": 1220.823366,
   "surface_tension_N_m": 0.064596279,
-  "kinematic_viscosity_m2_s": 7.281398376999999e-05,
-  "Ga": 118378.01798497434
+  "kinematic_viscosity_m2_s": 7.281398376999999e-05
+ },
+ {
+  "name": "class6_light3_pattern8_RPM410",
+  "cP": 88.89301278,
+  "viscosity_class": 6,
+  "RPM": 410.0,
+  "pattern": 8,
+  "light": 3,
+  "density_kg_m3": 1220.823366,
+  "surface_tension_N_m": 0.064596279,
+  "kinematic_viscosity_m2_s": 7.281398376999999e-05
+ },
+ {
+  "name": "class6_light1_pattern9_RPM430",
+  "cP": 88.89301278,
+  "viscosity_class": 6,
+  "RPM": 430.0,
+  "pattern": 9,
+  "light": 1,
+  "density_kg_m3": 1220.823366,
+  "surface_tension_N_m": 0.064596279,
+  "kinematic_viscosity_m2_s": 7.281398376999999e-05
  },
  {
   "name": "class7_light1_pattern0_RPM290",
@@ -428,56 +778,106 @@
   "light": 1,
   "density_kg_m3": 1228.324672,
   "surface_tension_N_m": 0.064302775,
-  "kinematic_viscosity_m2_s": 0.0001046291164,
-  "Ga": null
+  "kinematic_viscosity_m2_s": 0.0001046291164
  },
  {
-  "name": "class7_light2_pattern1_RPM290",
+  "name": "class7_light3_pattern1_RPM270",
   "cP": 128.5185251,
   "viscosity_class": 7,
-  "RPM": 290.0,
+  "RPM": 270.0,
   "pattern": 1,
+  "light": 3,
+  "density_kg_m3": 1228.324672,
+  "surface_tension_N_m": 0.064302775,
+  "kinematic_viscosity_m2_s": 0.0001046291164
+ },
+ {
+  "name": "class7_light0_pattern2_RPM310",
+  "cP": 128.5185251,
+  "viscosity_class": 7,
+  "RPM": 310.0,
+  "pattern": 2,
+  "light": 0,
+  "density_kg_m3": 1228.324672,
+  "surface_tension_N_m": 0.064302775,
+  "kinematic_viscosity_m2_s": 0.0001046291164
+ },
+ {
+  "name": "class7_light2_pattern3_RPM370",
+  "cP": 128.5185251,
+  "viscosity_class": 7,
+  "RPM": 370.0,
+  "pattern": 3,
   "light": 2,
   "density_kg_m3": 1228.324672,
   "surface_tension_N_m": 0.064302775,
-  "kinematic_viscosity_m2_s": 0.0001046291164,
-  "Ga": 57331.79432406407
+  "kinematic_viscosity_m2_s": 0.0001046291164
  },
  {
-  "name": "class7_light2_pattern2_RPM330",
+  "name": "class7_light1_pattern4_RPM330",
   "cP": 128.5185251,
   "viscosity_class": 7,
   "RPM": 330.0,
-  "pattern": 2,
-  "light": 2,
+  "pattern": 4,
+  "light": 1,
   "density_kg_m3": 1228.324672,
   "surface_tension_N_m": 0.064302775,
-  "kinematic_viscosity_m2_s": 0.0001046291164,
-  "Ga": null
+  "kinematic_viscosity_m2_s": 0.0001046291164
  },
  {
-  "name": "class7_light0_pattern3_RPM390",
+  "name": "class7_light2_pattern5_RPM390",
   "cP": 128.5185251,
   "viscosity_class": 7,
   "RPM": 390.0,
-  "pattern": 3,
-  "light": 0,
+  "pattern": 5,
+  "light": 2,
   "density_kg_m3": 1228.324672,
   "surface_tension_N_m": 0.064302775,
-  "kinematic_viscosity_m2_s": 0.0001046291164,
-  "Ga": null
+  "kinematic_viscosity_m2_s": 0.0001046291164
  },
  {
-  "name": "class7_light0_pattern4_RPM410",
+  "name": "class7_light3_pattern6_RPM410",
   "cP": 128.5185251,
   "viscosity_class": 7,
   "RPM": 410.0,
-  "pattern": 4,
+  "pattern": 6,
+  "light": 3,
+  "density_kg_m3": 1228.324672,
+  "surface_tension_N_m": 0.064302775,
+  "kinematic_viscosity_m2_s": 0.0001046291164
+ },
+ {
+  "name": "class7_light2_pattern7_RPM350",
+  "cP": 128.5185251,
+  "viscosity_class": 7,
+  "RPM": 350.0,
+  "pattern": 7,
+  "light": 2,
+  "density_kg_m3": 1228.324672,
+  "surface_tension_N_m": 0.064302775,
+  "kinematic_viscosity_m2_s": 0.0001046291164
+ },
+ {
+  "name": "class7_light0_pattern8_RPM450",
+  "cP": 128.5185251,
+  "viscosity_class": 7,
+  "RPM": 450.0,
+  "pattern": 8,
   "light": 0,
   "density_kg_m3": 1228.324672,
   "surface_tension_N_m": 0.064302775,
-  "kinematic_viscosity_m2_s": 0.0001046291164,
-  "Ga": null
+  "kinematic_viscosity_m2_s": 0.0001046291164
+ },
+ {
+  "name": "class7_light3_pattern9_RPM430",
+  "cP": 128.5185251,
+  "viscosity_class": 7,
+  "RPM": 430.0,
+  "pattern": 9,
+  "light": 3,
+  "density_kg_m3": 1228.324672,
+  "surface_tension_N_m": 0.064302775,
+  "kinematic_viscosity_m2_s": 0.0001046291164
  },
  {
   "name": "class8_light1_pattern0_RPM270",
@@ -488,56 +888,106 @@
   "light": 1,
   "density_kg_m3": 1234.705292,
   "surface_tension_N_m": 0.064049062,
-  "kinematic_viscosity_m2_s": 0.0001466959446,
-  "Ga": null
+  "kinematic_viscosity_m2_s": 0.0001466959446
  },
  {
-  "name": "class8_light1_pattern1_RPM290",
+  "name": "class8_light3_pattern1_RPM290",
   "cP": 181.1262592,
   "viscosity_class": 8,
   "RPM": 290.0,
   "pattern": 1,
-  "light": 1,
+  "light": 3,
   "density_kg_m3": 1234.705292,
   "surface_tension_N_m": 0.064049062,
-  "kinematic_viscosity_m2_s": 0.0001466959446,
-  "Ga": null
+  "kinematic_viscosity_m2_s": 0.0001466959446
  },
  {
-  "name": "class8_light0_pattern2_RPM370",
+  "name": "class8_light2_pattern2_RPM310",
   "cP": 181.1262592,
   "viscosity_class": 8,
-  "RPM": 370.0,
+  "RPM": 310.0,
   "pattern": 2,
+  "light": 2,
+  "density_kg_m3": 1234.705292,
+  "surface_tension_N_m": 0.064049062,
+  "kinematic_viscosity_m2_s": 0.0001466959446
+ },
+ {
+  "name": "class8_light3_pattern3_RPM330",
+  "cP": 181.1262592,
+  "viscosity_class": 8,
+  "RPM": 330.0,
+  "pattern": 3,
+  "light": 3,
+  "density_kg_m3": 1234.705292,
+  "surface_tension_N_m": 0.064049062,
+  "kinematic_viscosity_m2_s": 0.0001466959446
+ },
+ {
+  "name": "class8_light0_pattern4_RPM350",
+  "cP": 181.1262592,
+  "viscosity_class": 8,
+  "RPM": 350.0,
+  "pattern": 4,
   "light": 0,
   "density_kg_m3": 1234.705292,
   "surface_tension_N_m": 0.064049062,
-  "kinematic_viscosity_m2_s": 0.0001466959446,
-  "Ga": null
+  "kinematic_viscosity_m2_s": 0.0001466959446
  },
  {
-  "name": "class8_light2_pattern3_RPM390",
+  "name": "class8_light0_pattern5_RPM390",
   "cP": 181.1262592,
   "viscosity_class": 8,
   "RPM": 390.0,
-  "pattern": 3,
+  "pattern": 5,
+  "light": 0,
+  "density_kg_m3": 1234.705292,
+  "surface_tension_N_m": 0.064049062,
+  "kinematic_viscosity_m2_s": 0.0001466959446
+ },
+ {
+  "name": "class8_light1_pattern6_RPM370",
+  "cP": 181.1262592,
+  "viscosity_class": 8,
+  "RPM": 370.0,
+  "pattern": 6,
+  "light": 1,
+  "density_kg_m3": 1234.705292,
+  "surface_tension_N_m": 0.064049062,
+  "kinematic_viscosity_m2_s": 0.0001466959446
+ },
+ {
+  "name": "class8_light2_pattern7_RPM450",
+  "cP": 181.1262592,
+  "viscosity_class": 8,
+  "RPM": 450.0,
+  "pattern": 7,
   "light": 2,
   "density_kg_m3": 1234.705292,
   "surface_tension_N_m": 0.064049062,
-  "kinematic_viscosity_m2_s": 0.0001466959446,
-  "Ga": null
+  "kinematic_viscosity_m2_s": 0.0001466959446
  },
  {
-  "name": "class8_light2_pattern4_RPM430",
+  "name": "class8_light1_pattern8_RPM430",
   "cP": 181.1262592,
   "viscosity_class": 8,
   "RPM": 430.0,
-  "pattern": 4,
+  "pattern": 8,
+  "light": 1,
+  "density_kg_m3": 1234.705292,
+  "surface_tension_N_m": 0.064049062,
+  "kinematic_viscosity_m2_s": 0.0001466959446
+ },
+ {
+  "name": "class8_light2_pattern9_RPM410",
+  "cP": 181.1262592,
+  "viscosity_class": 8,
+  "RPM": 410.0,
+  "pattern": 9,
   "light": 2,
   "density_kg_m3": 1234.705292,
   "surface_tension_N_m": 0.064049062,
-  "kinematic_viscosity_m2_s": 0.0001466959446,
-  "Ga": null
+  "kinematic_viscosity_m2_s": 0.0001466959446
  },
  {
   "name": "class9_light0_pattern0_RPM270",
@@ -548,55 +998,105 @@
   "light": 0,
   "density_kg_m3": 1240.224684,
   "surface_tension_N_m": 0.063826179,
-  "kinematic_viscosity_m2_s": 0.00020157637819999999,
-  "Ga": null
+  "kinematic_viscosity_m2_s": 0.00020157637819999999
  },
  {
-  "name": "class9_light0_pattern1_RPM270",
+  "name": "class9_light2_pattern1_RPM290",
   "cP": 250.0,
   "viscosity_class": 9,
-  "RPM": 270.0,
+  "RPM": 290.0,
   "pattern": 1,
-  "light": 0,
-  "density_kg_m3": 1240.224684,
-  "surface_tension_N_m": 0.063826179,
-  "kinematic_viscosity_m2_s": 0.00020157637819999999,
-  "Ga": null
- },
- {
-  "name": "class9_light0_pattern2_RPM330",
-  "cP": 250.0,
-  "viscosity_class": 9,
-  "RPM": 330.0,
-  "pattern": 2,
-  "light": 0,
-  "density_kg_m3": 1240.224684,
-  "surface_tension_N_m": 0.063826179,
-  "kinematic_viscosity_m2_s": 0.00020157637819999999,
-  "Ga": null
- },
- {
-  "name": "class9_light2_pattern3_RPM430",
-  "cP": 250.0,
-  "viscosity_class": 9,
-  "RPM": 430.0,
-  "pattern": 3,
   "light": 2,
   "density_kg_m3": 1240.224684,
   "surface_tension_N_m": 0.063826179,
-  "kinematic_viscosity_m2_s": 0.00020157637819999999,
-  "Ga": 15446.190045110117
+  "kinematic_viscosity_m2_s": 0.00020157637819999999
  },
  {
-  "name": "class9_light1_pattern4_RPM430",
+  "name": "class9_light1_pattern2_RPM310",
   "cP": 250.0,
   "viscosity_class": 9,
-  "RPM": 430.0,
+  "RPM": 310.0,
+  "pattern": 2,
+  "light": 1,
+  "density_kg_m3": 1240.224684,
+  "surface_tension_N_m": 0.063826179,
+  "kinematic_viscosity_m2_s": 0.00020157637819999999
+ },
+ {
+  "name": "class9_light3_pattern3_RPM390",
+  "cP": 250.0,
+  "viscosity_class": 9,
+  "RPM": 390.0,
+  "pattern": 3,
+  "light": 3,
+  "density_kg_m3": 1240.224684,
+  "surface_tension_N_m": 0.063826179,
+  "kinematic_viscosity_m2_s": 0.00020157637819999999
+ },
+ {
+  "name": "class9_light1_pattern4_RPM330",
+  "cP": 250.0,
+  "viscosity_class": 9,
+  "RPM": 330.0,
   "pattern": 4,
   "light": 1,
   "density_kg_m3": 1240.224684,
   "surface_tension_N_m": 0.063826179,
-  "kinematic_viscosity_m2_s": 0.00020157637819999999,
-  "Ga": null
+  "kinematic_viscosity_m2_s": 0.00020157637819999999
+ },
+ {
+  "name": "class9_light3_pattern5_RPM350",
+  "cP": 250.0,
+  "viscosity_class": 9,
+  "RPM": 350.0,
+  "pattern": 5,
+  "light": 3,
+  "density_kg_m3": 1240.224684,
+  "surface_tension_N_m": 0.063826179,
+  "kinematic_viscosity_m2_s": 0.00020157637819999999
+ },
+ {
+  "name": "class9_light2_pattern6_RPM430",
+  "cP": 250.0,
+  "viscosity_class": 9,
+  "RPM": 430.0,
+  "pattern": 6,
+  "light": 2,
+  "density_kg_m3": 1240.224684,
+  "surface_tension_N_m": 0.063826179,
+  "kinematic_viscosity_m2_s": 0.00020157637819999999
+ },
+ {
+  "name": "class9_light0_pattern7_RPM290",
+  "cP": 250.0,
+  "viscosity_class": 9,
+  "RPM": 290.0,
+  "pattern": 7,
+  "light": 0,
+  "density_kg_m3": 1240.224684,
+  "surface_tension_N_m": 0.063826179,
+  "kinematic_viscosity_m2_s": 0.00020157637819999999
+ },
+ {
+  "name": "class9_light2_pattern8_RPM370",
+  "cP": 250.0,
+  "viscosity_class": 9,
+  "RPM": 370.0,
+  "pattern": 8,
+  "light": 2,
+  "density_kg_m3": 1240.224684,
+  "surface_tension_N_m": 0.063826179,
+  "kinematic_viscosity_m2_s": 0.00020157637819999999
+ },
+ {
+  "name": "class9_light0_pattern9_RPM410",
+  "cP": 250.0,
+  "viscosity_class": 9,
+  "RPM": 410.0,
+  "pattern": 9,
+  "light": 0,
+  "density_kg_m3": 1240.224684,
+  "surface_tension_N_m": 0.063826179,
+  "kinematic_viscosity_m2_s": 0.00020157637819999999
  }
 ]
