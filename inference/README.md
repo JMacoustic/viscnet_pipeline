@@ -3,19 +3,16 @@
 Standalone, minimal-dependency inference for **ViscNet**, a computer-vision model that
 estimates the **dynamic viscosity (cP)** of a stirred fluid from a short video of its
 free surface. This folder bundles the trained weights, a 100-clip public sample set, and
-just enough code to reproduce per-clip predictions.
+just enough code to produce per-clip predictions.
 
 Two model variants are provided:
 
-| Variant | File | Output | Test cP MAE\* |
-|---|---|---|---|
-| **cP regression** (`cp`) | `weights/cp_regression_seed1206.pth` | a single cP estimate | ~4.06 cP |
-| **GMM uncertainty** (`gmm`, K=5) | `weights/gmm_k5_seed1206.pth` | cP estimate **+ uncertainty** | ~2.39 cP |
+| Variant | File | Output |
+|---|---|---|
+| **cP regression** (`cp`) | `weights/cp_regression_seed1206.pth` | a single cP estimate |
+| **GMM uncertainty** (`gmm`, K=5) | `weights/gmm_k5_seed1206.pth` | cP estimate **+ uncertainty** |
 
-\* Video-level MAE on the **full 1000-clip** held-out test split of the seed-1206
-partition (not the 100-clip sample below). Both are seed-1206 checkpoints; the GMM one is
-the best-converged of the three GMM seeds (1205 / 1206 / 1207). Numbers verified against
-the training artifacts, `outputs/transfer/<run>/metrics.json`.
+Both are seed-1206 partition checkpoints.
 
 ## How it works
 
@@ -62,23 +59,8 @@ python infer.py --model gmm --device cpu     # force CPU
 ```
 
 Output is a per-clip table (true vs predicted cP, absolute percentage error) and a summary
-MAE / MAPE over the sample set. Point your own clips at it with `--data <folder-of-mp4>`
-(60-frame clips) and a matching `--labels <json>`.
-
-## Results on the 100-clip sample
-
-Running the two models over the bundled clips gives:
-
-| Variant | Sample cP MAE | Sample MAPE |
-|---|---|---|
-| `cp`  | 4.28 cP | 8.82 % |
-| `gmm` | 2.55 cP | 6.09 % |
-
-(A 100-clip subset, so these differ from the 1000-clip benchmark above.) The
-predicted-vs-true parity plot and a plain-language reading of it are in
-[`results/`](results/):
-
-![parity](results/parity.png)
+over the sample set. Point your own clips at it with `--data <folder-of-mp4>` (60-frame
+clips) and a matching `--labels <json>`.
 
 ## Sample data
 
@@ -102,10 +84,7 @@ inference/
 │   └── predict.py               # build model, load ckpt, 5-window predict
 ├── weights/                     # 2 checkpoints + standardizer
 ├── data/                        # 100 sample clips + labels.json
-├── results/                     # predictions + parity figure (+ how to read it)
-└── scripts/
-    ├── stage_from_pod.py        # (provenance) how weights/data were assembled
-    └── plot_results.py          # rebuilds results/parity.png
+└── scripts/stage_from_pod.py    # (provenance) how weights/data were assembled
 ```
 
 ## Notes on provenance

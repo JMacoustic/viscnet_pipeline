@@ -1,14 +1,14 @@
 # ViscNet Pipeline
 
-**ViscNet** estimates the **dynamic viscosity (cP)** of a stirred fluid from a short
-video of its free surface — no probe in the liquid, just a camera looking at the swirl
-and how it settles. This repository holds everything needed to *use* the trained model
-and to *reproduce the training videos*, split into two self-contained sections:
+ViscNet estimates the **dynamic viscosity (cP)** of a stirred fluid from a short video of
+its free surface — no probe in the liquid, just a camera looking at the swirl and how it
+settles. This repository holds everything needed to *use* the trained model and to
+*reproduce the training videos*, split into two self-contained sections:
 
 | Section | Path | What it does |
 |---|---|---|
-| 🔮 **Inference** | [`inference/`](inference/) | Run the trained ViViT estimator on videos to predict viscosity (with an optional uncertainty variant). Ships the weights, **100 sample clips**, and a one-command demo. |
-| 🧪 **Data generation** | [`data_generation/`](data_generation/) | Reproduce the synthetic training videos: SPlisHSPlasH fluid simulation → Splashsurf surface reconstruction → Blender rendering. |
+| **Inference** | [`inference/`](inference/) | Run the trained ViViT estimator on videos to predict viscosity (with an optional uncertainty variant). Ships the weights and 100 sample clips. |
+| **Data generation** | [`data_generation/`](data_generation/) | Reproduce the synthetic training videos: SPlisHSPlasH fluid simulation → Splashsurf surface reconstruction → Blender rendering. |
 
 The two sections are independent — you can run inference without touching the data
 pipeline, and vice-versa. Each folder has its own README and requirements.
@@ -17,7 +17,7 @@ pipeline, and vice-versa. Each folder has its own README and requirements.
 
 ## Quick start — inference
 
-Predict viscosity on the 100 bundled sample clips:
+Run the model on the 100 bundled sample clips:
 
 ```bash
 cd inference
@@ -26,19 +26,16 @@ python infer.py --model cp      # viscosity point estimate
 python infer.py --model gmm     # viscosity + uncertainty (K=5 mixture)
 ```
 
-It prints a per-clip table (true vs predicted cP) and a summary error. Two trained
-checkpoints are included (each the best-scoring seed-1206 partition checkpoint for its
-variant); their accuracy on the full 1000-clip held-out test set:
+It prints a per-clip table (true vs predicted cP) and a summary. Two trained checkpoints
+are included:
 
-| Variant | Output | Test cP MAE |
-|---|---|---|
-| `cp` — viscosity regression | a single cP estimate | ~4.06 cP |
-| `gmm` — K=5 mixture | cP estimate **+ uncertainty** | ~2.39 cP |
+| Variant | Output |
+|---|---|
+| `cp` — viscosity regression | a single cP estimate |
+| `gmm` — K=5 mixture | a cP estimate **+ uncertainty** |
 
-**Does it work?** See the predicted-vs-true plot and a plain-language walkthrough in
-[`inference/results/`](inference/results/) — dots on the diagonal are perfect predictions.
-
-![parity](inference/results/parity.png)
+See [`inference/README.md`](inference/README.md) for the model description, the five-window
+evaluation scheme, and how to run on your own clips.
 
 ## Quick start — data generation
 
