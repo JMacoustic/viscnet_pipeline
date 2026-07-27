@@ -67,6 +67,3 @@ physics-structured prior, then a viscosity head is fine-tuned end-to-end to pred
 head for calibrated uncertainty. Full details and provenance are in the
 [inference README](inference/README.md).
 
-## Citation
-
-If you use ViscNet, please cite the ViscNet paper. License: TBD by the authors.
