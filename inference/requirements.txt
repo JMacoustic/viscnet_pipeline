@@ -3,7 +3,7 @@
 # path uses only torch + transformers (ViViT layers) + numpy + a video decoder.
 #
 # GPU: install the CUDA build of torch matching your system. CPU-only works too
-# (inference of 50 clips x 5 windows is a few minutes on CPU).
+# (the 100 sample clips run in under a minute on a GPU; ~10-20 min CPU-only).
 torch==2.5.1
 transformers==4.39.0
 numpy==1.26.4

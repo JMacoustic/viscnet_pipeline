@@ -51,8 +51,8 @@ class VivitEmbed(nn.Module):
         # depth 10, 8 heads, MLP 1024). Smaller variants (e.g. the 7.85M MLP-768 build)
         # override these via the model config block; defaults preserve historical behaviour.
         self.config = VivitConfig(
-            hidden_size=int(hidden_size),  # ViViT-L
-            num_hidden_layers=int(num_hidden_layers),  # 20
+            hidden_size=int(hidden_size),
+            num_hidden_layers=int(num_hidden_layers),
             num_attention_heads=int(num_attention_heads),
             intermediate_size=int(intermediate_size),  # 1024
             tubelet_size=(2, 16, 16),
